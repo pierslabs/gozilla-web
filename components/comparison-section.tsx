@@ -23,7 +23,7 @@ export function ComparisonSection() {
               <X className='h-6 w-6 text-destructive' />
             </div>
             <h3 className='text-2xl font-bold text-foreground'>
-              WITHOUT GOCLI
+              WITHOUT GOZILLA
             </h3>
           </div>
           <ul className='space-y-4'>
@@ -52,7 +52,7 @@ export function ComparisonSection() {
             <div className='p-2 bg-primary/20 rounded-lg'>
               <Check className='h-6 w-6 text-primary' />
             </div>
-            <h3 className='text-2xl font-bold text-foreground'>WITH GOCLI</h3>
+            <h3 className='text-2xl font-bold text-foreground'>WITH GOZILLA</h3>
           </div>
           <ul className='space-y-4'>
             <li className='flex items-start gap-3'>
