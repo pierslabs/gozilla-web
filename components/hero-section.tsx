@@ -5,15 +5,15 @@ import Image from 'next/image';
 
 export function HeroSection() {
   return (
-    <section className=' flex flex-col items-center justify-center gap-8 py-24 md:py-32 text-center min-h-screen'>
+    <section className='relative flex flex-col items-center justify-center gap-8 py-24 md:py-32 text-center   overflow-hidden'>
       <div className='flex flex-col items-center gap-4 max-w-4xl'>
         <div className='inline-flex items-center gap-2 text-5xl md:text-6xl lg:text-7xl font-bold'>
           <span className='text-4xl'>
             <Image
               src='/gozilla-logo.png'
               alt='Go Logo'
-              width={60}
-              height={60}
+              width={64}
+              height={64}
             />
           </span>
           <span className='bg-linear-to-r from-primary to-secondary bg-clip-text text-transparent'>
