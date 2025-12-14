@@ -28,10 +28,10 @@ export function WaitlistSection() {
       <Card className='max-w-2xl mx-auto p-8 md:p-12 bg-card/80 backdrop-blur'>
         <div className='text-center mb-8'>
           <h2 className='text-3xl md:text-4xl font-bold mb-4 text-balance'>
-            Get early access
+            🦖 Get Early Access
           </h2>
           <p className='text-lg text-muted-foreground text-balance'>
-            Be the first to know when GoCLI launches.
+            Be the first to know when GoZilla launches.
             <br />
             Limited spots for beta testers.
           </p>
@@ -73,7 +73,7 @@ export function WaitlistSection() {
               </Button>
             </form>
 
-            <div className='space-y-2 text-sm text-muted-foreground'>
+            <div className='grid md:grid-cols-2 gap-4 text-sm text-muted-foreground'>
               <div className='flex items-center gap-2'>
                 <Check className='h-4 w-4 text-success shrink-0' />
                 <span>Early access to all features</span>
@@ -84,7 +84,11 @@ export function WaitlistSection() {
               </div>
               <div className='flex items-center gap-2'>
                 <Check className='h-4 w-4 text-success shrink-0' />
-                <span>Lifetime discount (when we launch paid tiers)</span>
+                <span>Lifetime discount on premium tiers</span>
+              </div>
+              <div className='flex items-center gap-2'>
+                <Check className='h-4 w-4 text-success shrink-0' />
+                <span>Direct support channel</span>
               </div>
             </div>
           </>

@@ -40,7 +40,7 @@ export function HowItWorksSection() {
             <div className='bg-code-bg rounded-lg p-4 mb-3 font-mono text-xs text-code-text text-left whitespace-pre'>
               {step.command}
             </div>
-            <p className='text-muted-foreground'>{step.description}</p>
+            <p className='text-muted-foreground mt-auto'>{step.description}</p>
           </Card>
         ))}
       </div>

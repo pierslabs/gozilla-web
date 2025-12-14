@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export function HeroSection() {
   return (
-    <section className='relative flex flex-col items-center justify-center gap-8 py-24 md:py-32 text-center   overflow-hidden'>
+    <section className='relative flex flex-col items-center justify-center gap-8 py-24 md:py-32 text-center h-screen overflow-hidden'>
       <div className='flex flex-col items-center gap-4 max-w-4xl'>
         <div className='inline-flex items-center gap-2 text-5xl md:text-6xl lg:text-7xl font-bold'>
           <span className='text-4xl'>
@@ -20,13 +20,14 @@ export function HeroSection() {
             GoZilla
           </span>
         </div>
-        <h1 className='text-3xl md:text-4xl lg:text-5xl font-semibold text-balance text-foreground'>
-          CLI for Go developers
+        <h1 className='text-5xl md:text-6xl lg:text-4xl font-bold text-balance text-foreground'>
+          Build Go APIs in 30 Seconds.
         </h1>
         <p className='text-lg md:text-xl text-muted-foreground text-balance max-w-2xl leading-relaxed'>
-          Stop wasting hours on boilerplate.
-          <br />
-          Start prototyping in minutes.
+          Stop wasting hours on setup. Start building features.
+        </p>
+        <p className='text-base md:text-lg text-green-400 font-semibold'>
+          Clean Architecture + Auto-wired DI + PostgreSQL included.
         </p>
       </div>
 

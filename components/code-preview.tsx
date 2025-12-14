@@ -10,6 +10,12 @@ export function CodePreview() {
   return (
     <section className='py-16 md:py-24 bg-muted/20'>
       <div className='max-w-5xl mx-auto'>
+        <div className='text-center mb-12'>
+          <h2 className='text-3xl md:text-4xl font-bold mb-4'>See It In Action</h2>
+          <p className='text-xl text-slate-400'>
+            Three commands. Thirty seconds. Production-ready API.
+          </p>
+        </div>
         <Tabs value={activeTab} onValueChange={setActiveTab} className='w-full'>
           <TabsList className='grid w-full grid-cols-3 mb-8'>
             <TabsTrigger value='new-project'>New Project</TabsTrigger>
@@ -81,6 +87,18 @@ func NewModule(db *sql.DB) *Module {
             </TabsContent>
           </Card>
         </Tabs>
+
+        <div className='mt-8 bg-green-500/10 border border-green-500/30 rounded-lg p-6 text-center'>
+          <p className='text-xl text-green-400 font-semibold mb-2'>
+            🎉 That's it. Your API is running.
+          </p>
+          <p className='text-slate-300 mb-1'>
+            Complete project structure • Auto-wired dependencies • Tests included
+          </p>
+          <p className='text-slate-400 text-sm'>
+            No configuration. No manual wiring. No boilerplate.
+          </p>
+        </div>
       </div>
     </section>
   );

@@ -12,6 +12,26 @@ const faqs = [
       "No. It's optional tooling for rapid prototyping. The generated code is clean, idiomatic Go.",
   },
   {
+    question: 'Does GoZilla use reflection or runtime magic?',
+    answer:
+      'No. Everything is generated as explicit code. What you see is what runs. No hidden magic.',
+  },
+  {
+    question: "What if I don't like PostgreSQL?",
+    answer:
+      'You can change the repository implementation easily. MySQL, SQLite, MongoDB support coming in future versions.',
+  },
+  {
+    question: 'Is the generated code idiomatic Go?',
+    answer:
+      'Yes. Follows Go best practices. No weird patterns. Standard library preferred. Minimal dependencies.',
+  },
+  {
+    question: 'How do updates work?',
+    answer:
+      "GoZilla generates code, it's not a framework. The code is yours. Update it however you want.",
+  },
+  {
     question: 'What frameworks are supported?',
     answer: 'Currently Gin.',
   },

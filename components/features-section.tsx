@@ -5,32 +5,38 @@ const features = [
   {
     icon: Zap,
     title: 'Instant Setup',
-    description: 'Full project in seconds. Docker, DB, tests ready.',
+    description: 'Generate complete projects in 30 seconds.',
+    details: 'Full project structure, Docker, database, migrations, tests - all configured and ready to run.',
   },
   {
     icon: Building,
     title: 'Clean Architecture',
-    description: 'Domain-driven design with clear layers and boundaries.',
+    description: 'Domain-driven design with clear boundaries.',
+    details: 'Proper separation of concerns. Scales from quick prototype to production application seamlessly.',
   },
   {
     icon: Plug,
-    title: 'Auto Wiring',
-    description: 'Dependencies injected automatically. Zero config.',
+    title: 'Auto Dependency Injection',
+    description: 'Dependencies wired automatically in generated code.',
+    details: 'No manual configuration. No reflection magic. Just clean, explicit dependency injection that works.',
   },
   {
     icon: Blocks,
-    title: 'Modular',
+    title: 'Modular by Design',
     description: 'Each feature is a self-contained module.',
+    details: 'Add, remove, or modify modules without touching existing code. True modularity for rapid iteration.',
   },
   {
     icon: TestTube,
     title: 'Test Ready',
-    description: 'Unit tests generated with every module.',
+    description: 'Unit tests generated for every layer.',
+    details: 'Domain tests, use case tests, handler tests with mock repositories. Start with 80%+ coverage.',
   },
   {
     icon: Package,
-    title: 'Multiple Frameworks',
-    description: 'Gin, Fiber, Echo, Chi support. (coming soon)',
+    title: 'Batteries Included',
+    description: 'PostgreSQL, migrations, Docker Compose ready.',
+    details: 'Everything you need to start coding. Run \'make dev\' and you\'re up in seconds.',
   },
 ];
 
@@ -49,18 +55,21 @@ export function FeaturesSection() {
           return (
             <Card
               key={index}
-              className='p-6 bg-card hover:bg-card/80 transition-colors'
+              className='p-6 bg-card hover:border-green-500/50 transition-colors'
             >
               <div className='mb-4'>
                 <div className='p-3 bg-primary/10 rounded-lg inline-block'>
                   <Icon className='h-6 w-6 text-primary' />
                 </div>
               </div>
-              <h3 className='text-xl font-semibold mb-2 text-foreground'>
+              <h3 className='text-xl font-bold mb-2 text-foreground'>
                 {feature.title}
               </h3>
-              <p className='text-muted-foreground leading-relaxed'>
+              <p className='text-green-400 mb-2 leading-relaxed'>
                 {feature.description}
+              </p>
+              <p className='text-sm text-slate-400 leading-relaxed'>
+                {feature.details}
               </p>
             </Card>
           );
