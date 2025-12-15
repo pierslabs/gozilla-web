@@ -23,7 +23,7 @@ export function WaitlistSection() {
   return (
     <section
       id='waitlist'
-      className='py-16 md:py-24 bg-linear-to-br from-primary/10 via-secondary/10 to-background'
+      className='py-16 md:py-24 bg-linear-to-br from-primary/10 via-secondary/10 to-background px-2 md:px-0'
     >
       <Card className='max-w-2xl mx-auto p-8 md:p-12 bg-card/80 backdrop-blur'>
         <div className='text-center mb-8'>

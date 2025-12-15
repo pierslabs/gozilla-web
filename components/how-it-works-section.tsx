@@ -23,7 +23,7 @@ const steps = [
 
 export function HowItWorksSection() {
   return (
-    <section className='py-16 md:py-24 bg-muted/20'>
+    <section className='py-16 md:py-24 bg-muted/20 px-2 md:px-0'>
       <div className='text-center mb-12'>
         <h2 className='text-3xl md:text-4xl font-bold mb-4 text-balance'>
           From idea to API in 3 steps

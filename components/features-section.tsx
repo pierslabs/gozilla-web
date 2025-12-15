@@ -6,43 +6,49 @@ const features = [
     icon: Zap,
     title: 'Instant Setup',
     description: 'Generate complete projects in 30 seconds.',
-    details: 'Full project structure, Docker, database, migrations, tests - all configured and ready to run.',
+    details:
+      'Full project structure, Docker, database, migrations, tests - all configured and ready to run.',
   },
   {
     icon: Building,
     title: 'Clean Architecture',
     description: 'Domain-driven design with clear boundaries.',
-    details: 'Proper separation of concerns. Scales from quick prototype to production application seamlessly.',
+    details:
+      'Proper separation of concerns. Scales from quick prototype to production application seamlessly.',
   },
   {
     icon: Plug,
     title: 'Auto Dependency Injection',
     description: 'Dependencies wired automatically in generated code.',
-    details: 'No manual configuration. No reflection magic. Just clean, explicit dependency injection that works.',
+    details:
+      'No manual configuration. No reflection magic. Just clean, explicit dependency injection that works.',
   },
   {
     icon: Blocks,
     title: 'Modular by Design',
     description: 'Each feature is a self-contained module.',
-    details: 'Add, remove, or modify modules without touching existing code. True modularity for rapid iteration.',
+    details:
+      'Add, remove, or modify modules without touching existing code. True modularity for rapid iteration.',
   },
   {
     icon: TestTube,
     title: 'Test Ready',
     description: 'Unit tests generated for every layer.',
-    details: 'Domain tests, use case tests, handler tests with mock repositories. Start with 80%+ coverage.',
+    details:
+      'Domain tests, use case tests, handler tests with mock repositories. Start with 80%+ coverage.',
   },
   {
     icon: Package,
     title: 'Batteries Included',
     description: 'PostgreSQL, migrations, Docker Compose ready.',
-    details: 'Everything you need to start coding. Run \'make dev\' and you\'re up in seconds.',
+    details:
+      "Everything you need to start coding. Run 'make dev' and you're up in seconds.",
   },
 ];
 
 export function FeaturesSection() {
   return (
-    <section className='py-16 md:py-24'>
+    <section className='py-16 md:py-24 px-2 md:px-0'>
       <div className='text-center mb-12'>
         <h2 className='text-3xl md:text-4xl font-bold mb-4 text-balance'>
           Why developers love GoZilla

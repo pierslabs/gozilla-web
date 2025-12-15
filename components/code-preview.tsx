@@ -8,10 +8,12 @@ export function CodePreview() {
   const [activeTab, setActiveTab] = useState('new-project');
 
   return (
-    <section className='py-16 md:py-24 bg-muted/20'>
+    <section className='py-16 md:py-24 bg-muted/20 px-2 md:px-0'>
       <div className='max-w-5xl mx-auto'>
         <div className='text-center mb-12'>
-          <h2 className='text-3xl md:text-4xl font-bold mb-4'>See It In Action</h2>
+          <h2 className='text-3xl md:text-4xl font-bold mb-4'>
+            See It In Action
+          </h2>
           <p className='text-xl text-slate-400'>
             Three commands. Thirty seconds. Production-ready API.
           </p>
@@ -93,7 +95,8 @@ func NewModule(db *sql.DB) *Module {
             🎉 That's it. Your API is running.
           </p>
           <p className='text-slate-300 mb-1'>
-            Complete project structure • Auto-wired dependencies • Tests included
+            Complete project structure • Auto-wired dependencies • Tests
+            included
           </p>
           <p className='text-slate-400 text-sm'>
             No configuration. No manual wiring. No boilerplate.
