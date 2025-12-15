@@ -15,7 +15,7 @@ export function Navbar() {
         <div className='flex items-center gap-4'>
           <Button variant='ghost' size='sm' asChild>
             <Link
-              href='https://github.com'
+              href='https://github.com/pierslabs/gozilla-cli'
               target='_blank'
               rel='noopener noreferrer'
             >

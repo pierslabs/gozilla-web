@@ -14,7 +14,7 @@ export function Footer() {
         <div className='flex items-center gap-4 justify-center'>
           <Button variant='ghost' size='sm' asChild>
             <Link
-              href='https://github.com'
+              href='https://github.com/pierslabs/gozilla-cli'
               target='_blank'
               rel='noopener noreferrer'
             >
@@ -31,7 +31,7 @@ export function Footer() {
             </Link>
           </Button>
           <Button variant='ghost' size='sm' asChild>
-            <Link href='mailto:hello@gozilla.dev'>
+            <Link href='mailto:support@gozilla.dev'>
               <Mail className='h-5 w-5' />
             </Link>
           </Button>
