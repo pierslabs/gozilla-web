@@ -1,5 +1,8 @@
+'use client';
+
 import { Card } from '@/components/ui/card';
 import { Zap, Building, Plug, Blocks, TestTube, Package } from 'lucide-react';
+import { useScrollAnimation } from '@/hooks/use-scroll-animation';
 
 const features = [
   {
@@ -47,8 +50,15 @@ const features = [
 ];
 
 export function FeaturesSection() {
+  const { ref, isVisible } = useScrollAnimation();
+
   return (
-    <section className='py-16 md:py-24 px-2 md:px-0'>
+    <section
+      ref={ref}
+      className={`py-16 md:py-24 px-2 md:px-0 transition-all duration-1000 ${
+        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+      }`}
+    >
       <div className='text-center mb-12'>
         <h2 className='text-3xl md:text-4xl font-bold mb-4 text-balance'>
           Why developers love GoZilla
@@ -61,7 +71,14 @@ export function FeaturesSection() {
           return (
             <Card
               key={index}
-              className='p-6 bg-card hover:border-green-500/50 transition-colors'
+              className={`p-6 bg-card hover:border-green-500/50 transition-all duration-700 ${
+                isVisible
+                  ? 'opacity-100 translate-y-0'
+                  : 'opacity-0 translate-y-10'
+              }`}
+              style={{
+                transitionDelay: isVisible ? `${index * 100}ms` : '0ms',
+              }}
             >
               <div className='mb-4'>
                 <div className='p-3 bg-primary/10 rounded-lg inline-block'>

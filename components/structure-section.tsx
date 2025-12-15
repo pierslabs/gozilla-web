@@ -1,8 +1,18 @@
+'use client';
+
 import { Card } from '@/components/ui/card';
+import { useScrollAnimation } from '@/hooks/use-scroll-animation';
 
 export function StructureSection() {
+  const { ref, isVisible } = useScrollAnimation();
+
   return (
-    <section className='py-16 md:py-24 bg-muted/20 px-2 md:px-0'>
+    <section
+      ref={ref}
+      className={`py-16 md:py-24 bg-muted/20 px-2 md:px-0 transition-all duration-1000 ${
+        isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+      }`}
+    >
       <div className='text-center mb-12'>
         <h2 className='text-3xl md:text-4xl font-bold mb-4 text-balance'>
           What you get out of the box
