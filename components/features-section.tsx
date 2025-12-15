@@ -23,8 +23,7 @@ const features = [
     icon: Plug,
     title: 'Auto Dependency Injection',
     description: 'Dependencies wired automatically in generated code.',
-    details:
-      'No manual configuration. No reflection magic. Just clean, explicit dependency injection that works.',
+    details: 'Just clean, explicit dependency injection that works.',
   },
   {
     icon: Blocks,
@@ -91,7 +90,7 @@ export function FeaturesSection() {
               <p className='text-green-400 mb-2 leading-relaxed'>
                 {feature.description}
               </p>
-              <p className='text-sm text-slate-400 leading-relaxed'>
+              <p className='text-sm text-slate-400 leading-relaxed mt-auto'>
                 {feature.details}
               </p>
             </Card>
