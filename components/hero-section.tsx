@@ -101,10 +101,7 @@ export function HeroSection() {
           }}
         >
           {`# Install via Go
-$ go install github.com/pierslabs/gozilla-cli@latest
-
-# Or download from GitHub releases
-$ curl -sSL https://github.com/pierslabs/gozilla-cli/releases/latest/download/install.sh | bash`}
+$ go install github.com/pierslabs/gozilla-cli/cmd/gozilla@v0.1.2`}
         </pre>
         <div className='mt-4 pt-4 border-t border-slate-700'>
           <p className='text-xs text-slate-400 text-center'>
